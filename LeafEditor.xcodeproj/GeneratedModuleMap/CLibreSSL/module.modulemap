@@ -1,0 +1,5 @@
+module CLibreSSL {
+    umbrella header "/Users/leonardodapisa/Documents/vapor/projects/Editor/LeafEditor/Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/include/CLibreSSL.h"
+    link "CLibreSSL"
+    export *
+}
