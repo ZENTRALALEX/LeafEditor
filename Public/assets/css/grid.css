@@ -1,0 +1,164 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.fill-h, html {
+    height: 100%;
+    min-height: 100;
+}
+
+.z-pad-xs {
+    padding: 0.2em;
+}
+
+.z-pad-s {
+    padding: 0.7em;
+}
+
+
+.z-del-m-r {
+    margin-right: 0 !important;
+}
+
+.z-del-m-b {
+    margin-bottom: 0 !important;
+}
+
+.z-del-pad-r {
+    padding-right: 0 !important;
+}
+
+.z-page {
+    background: #1e1e1e;
+    padding: 0.7em 0.7em 0.7em 0.7em;
+}
+
+.z-panel {
+    background: #252526;
+}
+
+.nav {
+    height: 4em;
+    background: #EEE;
+}
+
+.z-grid-r {
+    display: flex;
+    flex-direction: column;
+}
+
+.z-child {
+    flex: 1;
+}
+
+.z-grid > div, .z-grid-r > div {
+    margin: 0 0 0.7em 0;
+}
+
+.z-grid > div:last-child, .z-grid-r > div:last-child {
+    margin: 0 0 0 0;
+}
+
+div[class^="z-col-"], div[class*=" z-col-"], .z-col {
+    flex: 1;
+    display: flex;
+    margin: 0 0.7em 0 0;
+}
+
+div[class^="z-col-"]:last-of-type, div[class*=" z-col-"]:last-of-type, .z-col:last-of-type {
+    margin: 0 0 0 0;
+}
+
+div[class^="z-col-"] {
+    overflow: hidden;
+}
+
+.z-editor {
+    min-height: 300px;
+}
+
+
+@media (max-width: 767px) {
+    div[class^="z-col-"], div[class*=" z-col-"], .z-col {
+        display: block;
+        max-width: none;
+    }
+    div[class^="z-col-"], div[class*=" z-col-"], .z-col {
+        margin: 0 0 0.7em 0;
+    }
+}
+
+.z-col-1 {
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+}
+
+.z-col-2 {
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+}
+
+.z-col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.z-col-4 {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+}
+
+.z-col-5 {
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+}
+
+.z-col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.z-col-7 {
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+}
+
+.z-col-8 {
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+}
+
+.z-col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.z-col-10 {
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+}
+
+.z-col-11 {
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+}
+
+.z-col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.z-btn {
+    display: inline-block;
+    line-height: 3em;
+    background: #0ce3ac;
+}

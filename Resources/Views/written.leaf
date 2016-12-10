@@ -1,0 +1,58 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/list.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="assets/css/nav-side-menu.css">-->
+</head>
+<body class="fill-h">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="z-page fill-h z-grid-r">
+        <div class="z-pad-s-b">
+            <div class="z-panel z-pad-s">
+                ADMIN FOO BAR
+            </div>
+        </div>
+        <div class="z-col-12">
+            <div class="z-col-2 z-del-m-r">
+                <div class="z-panel z-pad-s z-child z-del-pad-r">
+                    <div class="z-side-menu z-block-list">
+                        <ul class="z-list-menu">
+                            #loop(messages, "message") {
+                                <li><a href="" class="fa fa-cogs fa-md pull-right"></a>#(file-list)</li>
+                            }
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="z-col-10">
+                <div class="z-panel z-pad-s z-col">
+                    <div class="z-grid-r z-col">
+                        <div class="z-del-m-b z-bar">
+                            <span>Code Editor</span><a class="z-editor-save z-btn pull-right">Save</a>
+                        </div>
+                        <div class="z-col z-editor">
+                            <div class="z-col" id="hans">#(editorContent)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/vendor/ace/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/app/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
