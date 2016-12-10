@@ -5,13 +5,6 @@ let drop = Droplet()
 
 var nodes = [Node(["one": "One", "two": "Two", "three": Node(["one": "One", "sub": "Two"])])]
 
-drop.post("upload") { request in
-    guard let file = request.multipart?["myFile"]?.file else {
-        return "Not found"
-    }
-    return "Found"
-}
-
 drop.post("leaf/save") { request in
     guard let leaf = request.data["leaf"]?.string else {
         return try JSON(node: ["error": "Failed to find leaf string.",

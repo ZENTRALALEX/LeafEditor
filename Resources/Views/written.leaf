@@ -17,11 +17,6 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="z-page fill-h z-grid-r z-bg-darker">
-<!--<form action="/upload" method="post" enctype="multipart/form-data">
-    <input type="file" name="myFile" id="myFile">
-<input type="submit" value="submit" name="submit">
-<input type="checkbox" name="myCheck" value="salami">
-</form>-->
         <div class="z-pad-s-b">
             <div class="z-panel z-pad-s">
                 Admin Bar edited
