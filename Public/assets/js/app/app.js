@@ -4,11 +4,12 @@ $(document).ready(function(){
     editor.setTheme("ace/theme/clouds_midnight");
     editor.getSession().setMode("ace/mode/html");
 
-    $('.z-editor-save').click(function() {
+    $('.z-editor-save').click(function(event) {
         var post = $.post( "http://localhost:8080/leaf/save", { "leaf": editor.getValue() } );
         post.done(function( data ) {
             console.log(data);
         });
+        event.preventDefault();
     });
 
    

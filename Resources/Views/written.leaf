@@ -38,7 +38,7 @@
                 <div class="z-panel z-pad-s z-col">
                     <div class="z-grid-r z-col">
                         <div class="z-del-m-b z-bar">
-                            <span>Code Editor</span><a class="z-editor-save z-btn pull-right">Save</a>
+                            <span>Code Editor</span><a href="" class="z-editor-save z-btn pull-right">Save</a>
                         </div>
                         <div class="z-col z-editor">
                             <div class="z-col" id="hans">#(editorContent)</div>
