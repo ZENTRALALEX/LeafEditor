@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/list.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -15,7 +16,12 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="z-page fill-h z-grid-r">
+    <div class="z-page fill-h z-grid-r z-bg-darker">
+<!--<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="myFile" id="myFile">
+<input type="submit" value="submit" name="submit">
+<input type="checkbox" name="myCheck" value="salami">
+</form>-->
         <div class="z-pad-s-b">
             <div class="z-panel z-pad-s">
                 Admin Bar edited
@@ -35,22 +41,27 @@
                 </div>
             </div>
             <div class="z-col-10">
-                <div class="z-panel z-pad-s z-col">
+                <div class="z-panel panel z-pad-s z-col">
                     <div class="z-grid-r z-col">
                         <div class="z-del-m-b z-bar">
-                            <span>Code Editor</span><a href="" class="z-editor-save z-btn pull-right">Save</a>
+                            <span>Code Editor</span><a href="#()" class="z-editor-save btn btn-warning pull-right">Save</a>
                         </div>
                         <div class="z-col z-editor">
-                            <div class="z-col" id="hans">#(editorContent)</div>
+                            <div class="z-col z-ace-editor" id="hans">#(editorContent)</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="assets/vendor/ace/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/vendor/jquery/jquery.color.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/vendor/jquery/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/vendor/jquery/jquery-timing.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/app/modal.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/app/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

@@ -38,12 +38,11 @@ html {
 }
 
 .z-page {
-    background: #1e1e1e;
     padding: 0.7em 0.7em 0.7em 0.7em;
 }
 
 .z-panel {
-    background: #252526;
+ 
 }
 
 .nav {
@@ -155,21 +154,4 @@ div[class^="z-col-"] {
 .z-col-12 {
     flex-basis: 100%;
     max-width: 100%;
-}
-
-.z-btn {
-    display: inline-block;
-    line-height: 3em;
-    background: #0ce3ac;
-}
-
-.z-btn {
-    display: inline-block;
-    line-height: 3em;
-    background: #0ce3ac;
-}
-
-.z-btn:hover {
-    text-decoration: none;
-    color: white;
 }
